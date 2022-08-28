@@ -1,0 +1,194 @@
+2022-06-13 21:37:11,204 DEBUG cd /home/abah/frappe-bench && /usr/bin/virtualenv --quiet env -p python3
+2022-06-13 21:37:11,511 DEBUG cd /home/abah/frappe-bench && /home/abah/frappe-bench/env/bin/python -m pip install --quiet --upgrade pip
+2022-06-13 21:37:16,097 LOG Getting frappe
+2022-06-13 21:37:16,097 DEBUG cd frappe-bench/apps && git clone https://github.com/frappe/frappe.git --branch version-12 --depth 1 --origin upstream
+2022-06-13 21:37:46,586 LOG Installing frappe
+2022-06-13 21:37:46,587 DEBUG cd /home/abah/frappe-bench && /home/abah/frappe-bench/env/bin/python -m pip install --quiet --upgrade -e /home/abah/frappe-bench/apps/frappe 
+2022-06-13 21:38:09,130 DEBUG cd /home/abah/frappe-bench/apps/frappe && yarn install
+2022-06-13 21:39:51,022 DEBUG cd frappe-bench && bench build
+2022-06-13 21:39:51,374 INFO /usr/local/bin/bench build
+2022-06-13 21:40:32,630 LOG setting up backups
+2022-06-13 21:40:33,296 LOG backups were set up
+2022-06-13 21:40:33,310 INFO Bench frappe-bench initialized
+2022-06-13 21:47:55,736 INFO /usr/local/bin/bench start
+2022-06-13 21:47:57,902 INFO /usr/local/bin/bench worker --queue default
+2022-06-13 21:47:57,909 INFO /usr/local/bin/bench worker --queue long
+2022-06-13 21:47:57,914 INFO /usr/local/bin/bench schedule
+2022-06-13 21:47:57,935 INFO /usr/local/bin/bench worker --queue short
+2022-06-13 21:47:57,935 INFO /usr/local/bin/bench watch
+2022-06-13 21:47:57,970 INFO /usr/local/bin/bench serve --port 8000
+2022-06-13 21:50:33,457 INFO /usr/local/bin/bench start
+2022-06-13 21:50:35,615 INFO /usr/local/bin/bench watch
+2022-06-13 21:50:35,631 INFO /usr/local/bin/bench worker --queue long
+2022-06-13 21:50:35,666 INFO /usr/local/bin/bench serve --port 8000
+2022-06-13 21:50:35,683 INFO /usr/local/bin/bench schedule
+2022-06-13 21:50:35,710 INFO /usr/local/bin/bench worker --queue short
+2022-06-13 21:50:35,743 INFO /usr/local/bin/bench worker --queue default
+2022-06-13 22:02:49,916 INFO /usr/local/bin/bench new-site abah.com
+2022-06-13 22:04:09,278 INFO /usr/local/bin/bench start
+2022-06-13 22:04:10,898 INFO /usr/local/bin/bench worker --queue short
+2022-06-13 22:04:11,066 INFO /usr/local/bin/bench schedule
+2022-06-13 22:04:11,082 INFO /usr/local/bin/bench watch
+2022-06-13 22:04:11,098 INFO /usr/local/bin/bench serve --port 8000
+2022-06-13 22:04:11,102 INFO /usr/local/bin/bench worker --queue long
+2022-06-13 22:04:11,141 INFO /usr/local/bin/bench worker --queue default
+2022-06-13 22:08:26,344 INFO /usr/local/bin/bench get-app erpnext --branch version-12
+2022-06-13 22:08:28,172 LOG Getting erpnext
+2022-06-13 22:08:28,173 DEBUG cd ./apps && git clone https://github.com/frappe/erpnext.git --branch version-12 --depth 1 --origin upstream
+2022-06-13 22:09:13,515 LOG Installing erpnext
+2022-06-13 22:09:13,516 DEBUG cd /home/abah/frappe-bench && /home/abah/frappe-bench/env/bin/python -m pip install --quiet --upgrade -e /home/abah/frappe-bench/apps/erpnext 
+2022-06-13 22:11:15,612 DEBUG cd /home/abah/frappe-bench/apps/erpnext && yarn install
+2022-06-13 22:11:16,414 DEBUG bench build --app erpnext
+2022-06-13 22:11:16,619 INFO /usr/local/bin/bench build --app erpnext
+2022-06-13 22:11:43,947 INFO /usr/local/bin/bench --site abah.com install-app erpnext
+2022-06-13 22:13:06,287 INFO /usr/local/bin/bench start
+2022-06-13 22:13:07,738 INFO /usr/local/bin/bench worker --queue short
+2022-06-13 22:13:07,814 INFO /usr/local/bin/bench worker --queue default
+2022-06-13 22:13:07,816 INFO /usr/local/bin/bench watch
+2022-06-13 22:13:07,837 INFO /usr/local/bin/bench worker --queue long
+2022-06-13 22:13:07,929 INFO /usr/local/bin/bench serve --port 8000
+2022-06-13 22:13:07,952 INFO /usr/local/bin/bench schedule
+2022-06-13 22:20:35,300 INFO /usr/local/bin/bench start
+2022-06-13 22:20:37,655 INFO /usr/local/bin/bench watch
+2022-06-13 22:20:37,686 INFO /usr/local/bin/bench worker --queue long
+2022-06-13 22:20:37,715 INFO /usr/local/bin/bench serve --port 8000
+2022-06-13 22:20:37,737 INFO /usr/local/bin/bench schedule
+2022-06-13 22:20:37,740 INFO /usr/local/bin/bench worker --queue default
+2022-06-13 22:20:37,763 INFO /usr/local/bin/bench worker --queue short
+2022-06-13 22:54:57,677 INFO /usr/local/bin/bench set-config developer_mode 1
+2022-06-13 22:55:27,817 INFO /usr/local/bin/bench set-config developer_mode 1 --abah.com
+2022-06-13 22:57:30,710 INFO /usr/local/bin/bench set-config developer_mode 1
+2022-06-13 22:59:01,907 INFO /usr/local/bin/bench --site abah.com set-config developer_mode 1
+2022-06-14 15:00:16,799 INFO /usr/local/bin/bench new-app Demo-App
+2022-06-14 15:00:18,379 LOG creating new app demo_app
+2022-06-14 15:01:46,647 LOG Installing demo_app
+2022-06-14 15:01:46,647 DEBUG cd /home/abah/frappe-bench && /home/abah/frappe-bench/env/bin/python -m pip install --quiet --upgrade -e /home/abah/frappe-bench/apps/demo_app 
+2022-06-14 15:01:48,885 WARNING /usr/local/bin/bench new-app Demo-App executed with exit code 1
+2022-06-14 15:05:38,390 INFO /usr/local/bin/bench new-app Demo-App
+2022-06-14 15:05:39,121 LOG creating new app demo_app
+2022-06-14 15:06:34,525 LOG Installing demo_app
+2022-06-14 15:06:34,526 DEBUG cd /home/abah/frappe-bench && /home/abah/frappe-bench/env/bin/python -m pip install --quiet --upgrade -e /home/abah/frappe-bench/apps/demo_app 
+2022-06-14 15:06:37,147 WARNING /usr/local/bin/bench new-app Demo-App executed with exit code 1
+2022-06-14 15:08:45,075 INFO /usr/local/bin/bench version
+2022-06-14 15:09:56,078 INFO /usr/local/bin/bench start
+2022-06-14 15:09:57,609 INFO /usr/local/bin/bench worker --queue short
+2022-06-14 15:09:57,613 INFO /usr/local/bin/bench schedule
+2022-06-14 15:09:57,632 INFO /usr/local/bin/bench watch
+2022-06-14 15:09:57,637 INFO /usr/local/bin/bench worker --queue long
+2022-06-14 15:09:57,717 INFO /usr/local/bin/bench worker --queue default
+2022-06-14 15:09:57,773 INFO /usr/local/bin/bench serve --port 8000
+2022-06-14 15:13:35,755 INFO /usr/local/bin/bench install-app demo_app
+2022-06-14 15:13:47,249 INFO /usr/local/bin/bench start
+2022-06-14 15:13:48,801 INFO /usr/local/bin/bench watch
+2022-06-14 15:13:48,877 INFO /usr/local/bin/bench worker --queue short
+2022-06-14 15:13:48,898 INFO /usr/local/bin/bench worker --queue long
+2022-06-14 15:13:48,908 INFO /usr/local/bin/bench serve --port 8000
+2022-06-14 15:13:48,911 INFO /usr/local/bin/bench worker --queue default
+2022-06-14 15:13:48,925 INFO /usr/local/bin/bench schedule
+2022-06-14 16:22:09,624 INFO /usr/local/bin/bench mariadb
+2022-06-16 11:24:09,493 INFO /usr/local/bin/bench start
+2022-06-16 11:24:11,896 INFO /usr/local/bin/bench serve --port 8000
+2022-06-16 11:24:11,955 INFO /usr/local/bin/bench worker --queue default
+2022-06-16 11:24:11,960 INFO /usr/local/bin/bench watch
+2022-06-16 11:24:12,017 INFO /usr/local/bin/bench schedule
+2022-06-16 11:24:12,028 INFO /usr/local/bin/bench worker --queue long
+2022-06-16 11:24:12,039 INFO /usr/local/bin/bench worker --queue short
+2022-06-16 12:00:02,340 INFO /usr/local/bin/bench --verbose --site all backup
+2022-06-18 21:33:48,139 INFO /usr/local/bin/bench new-app Dwg_Number
+2022-06-18 21:33:49,772 LOG creating new app dwg_number
+2022-06-18 21:35:05,453 LOG Installing dwg_number
+2022-06-18 21:35:05,453 DEBUG cd /home/abah/frappe-bench && /home/abah/frappe-bench/env/bin/python -m pip install --quiet --upgrade -e /home/abah/frappe-bench/apps/dwg_number 
+2022-06-18 21:35:07,531 WARNING /usr/local/bin/bench new-app Dwg_Number executed with exit code 1
+2022-06-18 21:36:26,036 INFO /usr/local/bin/bench version
+2022-06-18 21:37:07,479 INFO /usr/local/bin/bench start
+2022-06-18 21:37:09,101 INFO /usr/local/bin/bench serve --port 8000
+2022-06-18 21:37:09,169 INFO /usr/local/bin/bench watch
+2022-06-18 21:37:09,196 INFO /usr/local/bin/bench worker --queue short
+2022-06-18 21:37:09,216 INFO /usr/local/bin/bench schedule
+2022-06-18 21:37:09,224 INFO /usr/local/bin/bench worker --queue long
+2022-06-18 21:37:09,259 INFO /usr/local/bin/bench worker --queue default
+2022-06-18 21:38:57,131 INFO /usr/local/bin/bench install-app dwg_number
+2022-06-18 21:52:35,509 INFO /usr/local/bin/bench start
+2022-06-18 21:52:36,932 INFO /usr/local/bin/bench serve --port 8000
+2022-06-18 21:52:36,956 INFO /usr/local/bin/bench worker --queue default
+2022-06-18 21:52:36,990 INFO /usr/local/bin/bench worker --queue long
+2022-06-18 21:52:37,034 INFO /usr/local/bin/bench watch
+2022-06-18 21:52:37,052 INFO /usr/local/bin/bench schedule
+2022-06-18 21:52:37,069 INFO /usr/local/bin/bench worker --queue short
+2022-06-19 00:00:01,859 INFO /usr/local/bin/bench --verbose --site all backup
+2022-06-19 13:42:59,426 INFO /usr/local/bin/bench remove-app dwg_number
+2022-06-19 13:43:01,069 INFO /usr/local/bin/bench --site all list-apps --format json
+2022-06-19 13:43:01,627 INFO /usr/local/bin/bench --site abah.com list-apps
+2022-06-19 13:43:02,012 WARNING /usr/local/bin/bench remove-app dwg_number executed with exit code 1
+2022-06-19 13:56:17,959 INFO /usr/local/bin/bench start
+2022-06-19 13:56:20,950 INFO /usr/local/bin/bench worker --queue default
+2022-06-19 13:56:20,995 INFO /usr/local/bin/bench worker --queue short
+2022-06-19 13:56:21,014 INFO /usr/local/bin/bench serve --port 8000
+2022-06-19 13:56:21,052 INFO /usr/local/bin/bench schedule
+2022-06-19 13:56:21,089 INFO /usr/local/bin/bench worker --queue long
+2022-06-19 13:56:21,100 INFO /usr/local/bin/bench watch
+2022-06-19 14:51:33,271 INFO /usr/local/bin/bench start
+2022-06-19 14:51:34,965 INFO /usr/local/bin/bench worker --queue long
+2022-06-19 14:51:35,034 INFO /usr/local/bin/bench worker --queue default
+2022-06-19 14:51:35,037 INFO /usr/local/bin/bench schedule
+2022-06-19 14:51:35,043 INFO /usr/local/bin/bench serve --port 8000
+2022-06-19 14:51:35,056 INFO /usr/local/bin/bench worker --queue short
+2022-06-19 14:51:35,081 INFO /usr/local/bin/bench watch
+2022-06-19 17:08:16,669 INFO /usr/local/bin/bench start
+2022-06-19 17:08:19,054 INFO /usr/local/bin/bench worker --queue short
+2022-06-19 17:08:19,177 INFO /usr/local/bin/bench watch
+2022-06-19 17:08:19,253 INFO /usr/local/bin/bench schedule
+2022-06-19 17:08:19,276 INFO /usr/local/bin/bench serve --port 8000
+2022-06-19 17:08:19,314 INFO /usr/local/bin/bench worker --queue long
+2022-06-19 17:08:19,349 INFO /usr/local/bin/bench worker --queue default
+2022-06-19 21:56:00,846 INFO /usr/local/bin/bench start
+2022-06-19 21:56:03,183 INFO /usr/local/bin/bench serve --port 8000
+2022-06-19 21:56:03,296 INFO /usr/local/bin/bench watch
+2022-06-19 21:56:03,339 INFO /usr/local/bin/bench worker --queue short
+2022-06-19 21:56:03,499 INFO /usr/local/bin/bench schedule
+2022-06-19 21:56:03,514 INFO /usr/local/bin/bench worker --queue long
+2022-06-19 21:56:03,580 INFO /usr/local/bin/bench worker --queue default
+2022-06-22 17:09:38,633 INFO /usr/local/bin/bench start
+2022-06-22 17:09:41,467 INFO /usr/local/bin/bench schedule
+2022-06-22 17:09:41,510 INFO /usr/local/bin/bench worker --queue default
+2022-06-22 17:09:41,525 INFO /usr/local/bin/bench watch
+2022-06-22 17:09:41,559 INFO /usr/local/bin/bench serve --port 8000
+2022-06-22 17:09:41,584 INFO /usr/local/bin/bench worker --queue short
+2022-06-22 17:09:41,588 INFO /usr/local/bin/bench worker --queue long
+2022-06-22 17:19:06,317 INFO /usr/local/bin/bench start
+2022-06-22 17:19:08,352 INFO /usr/local/bin/bench worker --queue short
+2022-06-22 17:19:08,410 INFO /usr/local/bin/bench worker --queue long
+2022-06-22 17:19:08,460 INFO /usr/local/bin/bench schedule
+2022-06-22 17:19:08,478 INFO /usr/local/bin/bench worker --queue default
+2022-06-22 17:19:08,515 INFO /usr/local/bin/bench serve --port 8000
+2022-06-22 17:19:08,526 INFO /usr/local/bin/bench watch
+2022-06-22 23:16:06,984 INFO /usr/local/bin/bench start
+2022-06-22 23:16:09,683 INFO /usr/local/bin/bench schedule
+2022-06-22 23:16:09,799 INFO /usr/local/bin/bench worker --queue long
+2022-06-22 23:16:09,804 INFO /usr/local/bin/bench serve --port 8000
+2022-06-22 23:16:09,876 INFO /usr/local/bin/bench watch
+2022-06-22 23:16:09,981 INFO /usr/local/bin/bench worker --queue short
+2022-06-22 23:16:10,041 INFO /usr/local/bin/bench worker --queue default
+2022-06-23 20:21:36,998 INFO /usr/local/bin/bench start
+2022-06-23 20:21:39,658 INFO /usr/local/bin/bench serve --port 8000
+2022-06-23 20:21:39,762 INFO /usr/local/bin/bench schedule
+2022-06-23 20:21:39,829 INFO /usr/local/bin/bench worker --queue short
+2022-06-23 20:21:39,897 INFO /usr/local/bin/bench worker --queue default
+2022-06-23 20:21:39,934 INFO /usr/local/bin/bench worker --queue long
+2022-06-23 20:21:39,976 INFO /usr/local/bin/bench watch
+2022-06-27 10:26:19,974 INFO /usr/local/bin/bench -v
+2022-06-27 10:26:21,477 WARNING /usr/local/bin/bench -v executed with exit code 2
+2022-06-27 10:27:32,420 INFO /usr/local/bin/bench --version
+2022-06-27 10:27:33,260 INFO A newer version of bench is available: 5.10.0 → 5.11.0
+2022-06-27 10:29:02,319 INFO /usr/local/bin/bench start
+2022-06-27 10:29:04,668 INFO /usr/local/bin/bench worker --queue default
+2022-06-27 10:29:04,679 INFO /usr/local/bin/bench serve --port 8000
+2022-06-27 10:29:04,718 INFO /usr/local/bin/bench schedule
+2022-06-27 10:29:04,740 INFO /usr/local/bin/bench worker --queue short
+2022-06-27 10:29:04,741 INFO /usr/local/bin/bench worker --queue long
+2022-06-27 10:29:04,757 INFO /usr/local/bin/bench watch
+2022-06-27 11:11:21,167 INFO /usr/local/bin/bench console
+2022-06-27 11:22:15,352 INFO /usr/local/bin/bench mariadb
+2022-06-28 12:00:01,847 INFO /usr/local/bin/bench --verbose --site all backup
+2022-07-08 06:00:01,753 INFO /usr/local/bin/bench --verbose --site all backup
+2022-07-15 00:00:02,470 INFO /usr/local/bin/bench --verbose --site all backup

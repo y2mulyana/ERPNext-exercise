@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include dwg_number *.css
+recursive-include dwg_number *.csv
+recursive-include dwg_number *.html
+recursive-include dwg_number *.ico
+recursive-include dwg_number *.js
+recursive-include dwg_number *.json
+recursive-include dwg_number *.md
+recursive-include dwg_number *.png
+recursive-include dwg_number *.py
+recursive-include dwg_number *.svg
+recursive-include dwg_number *.txt
+recursive-exclude dwg_number *.pyc
